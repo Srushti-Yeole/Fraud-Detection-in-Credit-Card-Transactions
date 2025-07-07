@@ -1,0 +1,6 @@
+2025-06-09 03:14:03,342 - INFO - Created synthetic dataset with 10000 samples
+2025-06-09 03:14:03,343 - INFO - Fraud ratio: 5.00%
+2025-06-09 03:14:06,836 - INFO - Model accuracy: 99.90%
+2025-06-09 03:14:06,924 - INFO - Test case {'amount': 15000, 'time_of_day': 2, 'n_transactions': 20}: Fraud probability = 100.00%
+2025-06-09 03:14:06,959 - INFO - Test case {'amount': 100, 'time_of_day': 14, 'n_transactions': 2}: Fraud probability = 0.00%
+2025-06-09 03:14:07,222 - INFO - Model and scaler saved successfully

@@ -1,0 +1,39 @@
+{% extends "layout.html" %} {% block content %}
+
+<main>
+  <div class="center">
+    <h3>Please enter all the values</h3>
+  </div>
+  <form id="form" action="/predict" method="post">
+    <div class="container grid input-elements">
+      {% for i in range(4) %}
+      <div>
+        {% for j in range(7) %}
+        <input
+          type="number"
+          name="{{ features[i*7+j] }}"
+          placeholder="{{ features[i*7+j] }}"
+          aria-label="{{ features[i*7+j] }}"
+          id="{{ features[i*7+j] }}"
+          step="any"
+        />
+        {% if(i == 0 and j == 6) %}
+        <input
+          type="number"
+          name="Amount"
+          placeholder="Amount"
+          aria-label="Amount"
+          id="amount"
+          step="any"
+        />
+        {% endif %} {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+    <div class="container center">
+      <button type="submit" id="btn-submit">Predict</button>
+    </div>
+  </form>
+</main>
+
+{% endblock %}
