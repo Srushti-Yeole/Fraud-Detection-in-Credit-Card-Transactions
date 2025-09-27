@@ -146,6 +146,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+ ## Live Project
+
+Check out the live project [here](https://fraud-detection-in-credit-card-uw5t.onrender.com/)
+
+
 
 
 
