@@ -373,8 +373,8 @@ def trigger_retraining():
 if __name__ == '__main__':
     print("Starting Flask application...")
     try:
-        # Start in debug mode for better error reporting
-        app.run(host='0.0.0.0', port=5000, debug=True)
+        port = int(os.environ.get("PORT", 5000))  # ✅ use Render's PORT
+        app.run(host='0.0.0.0', port=port, debug=True)
     except Exception as e:
         print(f"Error starting Flask app: {str(e)}")
         logging.error(f"Flask startup error: {str(e)}")
